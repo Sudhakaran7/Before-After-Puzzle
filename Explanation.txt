@@ -1,0 +1,70 @@
+Given a list of phrases, generate a list of Before and After puzzles.
+A phrase is a string that consists of lowercase English letters and spaces only. No space appears in the start or the end of a phrase. There are no consecutive spaces in a phrase.
+Before and After puzzles are phrases that are formed by merging two phrases where the last word of the first phrase is the same as the first word of the second phrase.
+Return the Before and After puzzles that can be formed by every two phrases phrases[i] and phrases[j] where i != j. Note that the order of matching two phrases matters, 
+we want to consider both orders.
+You should return a list of distinct strings sorted lexicographically.
+
+Input Description:
+First line contains, n the size of list for phrases.(1<n<1000)
+Rest lines contains, n strings as inputs for list.
+
+Output Description:
+Print a list of distinct strings sorted lexicographically.
+
+Sample Input:
+2
+writing code
+code rocks
+
+Sample Output:
+writing code rocks
+
+Explanation:
+FOr the given words these are the lexicographically sorted strings.
+
+Sample Input:
+3
+a
+b
+a
+
+Sample Output:
+a
+
+Sample Input:
+4
+mission impossible
+chocolate bar
+eat my words
+bar of bottle
+
+Sample Output:
+chocolate bar of bottle
+
+Sample Input:
+2
+block party
+a chip off the old block
+
+Sample Output:
+a chip off the old block party
+
+Sample Input:
+3
+a thief is a
+broken gold
+a dog is thief
+
+Sample Output:
+a thief is a dog is thief
+
+Sample Input:
+4
+sindhbath is a sailor
+ship will be in sea
+sea is in blue colour
+sailor is a good man
+
+Sample Output:
+ship will be in sea is in blue colour sindhbath is a sailor is a good man
